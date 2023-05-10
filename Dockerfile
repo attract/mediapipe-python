@@ -64,7 +64,7 @@ azel-${BAZEL_VERSION}-installer-linux-x86_64.sh" && \
 
 WORKDIR /mediapipe
 # Fork official mediapipe (with fixes - https://github.com/google/mediapipe/issues/3491#issuecomment-1354288601)
-RUN git clone -g master https://github.com/attract/mediapipe.git
+RUN git clone -b master https://github.com/attract/mediapipe.git
 WORKDIR /mediapipe/mediapipe
 
 RUN pip3 install -r requirements.txt
