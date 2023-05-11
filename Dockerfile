@@ -47,8 +47,9 @@ RUN pip3 install absl-py numpy opencv-contrib-python protobuf==3.20.1
 RUN pip3 install six==1.14.0
 RUN pip3 install tensorflow
 RUN pip3 install tf_slim
-RUN pip3 install rq
-RUN pip3 install redis
+RUN pip3 install rq==1.11.1
+RUN pip3 install redis==3.5.3
+RUN pip3 install boto3==1.9.208
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
